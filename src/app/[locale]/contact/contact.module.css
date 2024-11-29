@@ -1,0 +1,40 @@
+.section {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: fit-content;
+  padding-top: 135px;
+  height: fit-content;
+}
+.contactUs {
+  width: 100%;
+  height: fit-content;
+  background: url("../../../../public/contact/contact.png");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contactUs .form {
+  justify-self: flex-end;
+  margin: auto 103px auto auto;
+  width: fit-content;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+  .contactUs {
+    background: none;
+  }
+  .contactUs .form {
+    justify-self: center;
+    margin: auto;
+    width: 90%;
+  }
+}

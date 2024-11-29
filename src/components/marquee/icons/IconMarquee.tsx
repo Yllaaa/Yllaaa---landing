@@ -23,6 +23,7 @@ function IconMarquee(props: Props) {
       <div className={styles.cardMarquee}>
         {img1 && img2 && img3 && img4 && img5 && img6 && img7 && (
           <Marquee speed={50}
+          autoFill={true}
           >
             
               <div className={styles.element}>

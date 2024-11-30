@@ -49,18 +49,10 @@
   position: relative;
   width: 100vw;
   min-height: fit-content;
-  padding: 0 auto 102px auto;
   padding-bottom: 102px;
   margin: 130px auto;
 }
-.teamSection {
-  position: relative;
-  width: 100vw;
-  min-height: fit-content;
-  padding: 0 auto 102px auto;
-  padding-bottom: 102px;
-  margin: 119px auto 130px auto;
-}
+
 .forClientsContainer {
   position: relative;
   width: 100vw;
@@ -85,17 +77,8 @@
   position: relative;
   width: 100vw;
   min-height: fit-content;
-  padding: 0 auto 102px auto;
   padding-bottom: 102px;
   margin: 130px auto;
-}
-.teamSection {
-  position: relative;
-  width: 100vw;
-  min-height: fit-content;
-  padding: 0 auto 102px auto;
-  padding-bottom: 102px;
-  margin: 119px auto 130px auto;
 }
 .forClientsContainer {
   position: relative;
@@ -123,9 +106,6 @@
   }
   .processContainer {
     height: fit-content;
-  }
-  .teamSection {
-    margin: 50px auto 50px auto;
   }
   .forClientsContainer {
     margin: 50px auto 50px auto;

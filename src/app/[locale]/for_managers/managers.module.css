@@ -21,17 +21,8 @@
     position: relative;
     width: 100vw;
     min-height: fit-content;
-    padding: 0 auto 102px auto;
     padding-bottom: 102px;
     margin: 130px auto;
-  }
-  .teamSection {
-    position: relative;
-    width: 100vw;
-    min-height: fit-content;
-    padding: 0 auto 102px auto;
-    padding-bottom: 102px;
-    margin: 119px auto 130px auto;
   }
   .forClientsContainer {
     position: relative;
@@ -40,42 +31,7 @@
     min-height: fit-content;
     margin: 130px auto 260px auto;
   }
-  .heroContainer {
-    position: relative;
-    width: 100vw;
-    height: fit-content;
-    min-height: fit-content;
-    margin: 0 auto 70px auto;
-  }
-  .marqueeContainer {
-    margin: 70px auto 148px auto;
-    height: fit-content;
-    min-height: fit-content;
-    overflow-y: hidden;
-  }
-  .processContainer {
-    position: relative;
-    width: 100vw;
-    min-height: fit-content;
-    padding: 0 auto 102px auto;
-    padding-bottom: 102px;
-    margin: 130px auto;
-  }
-  .teamSection {
-    position: relative;
-    width: 100vw;
-    min-height: fit-content;
-    padding: 0 auto 102px auto;
-    padding-bottom: 102px;
-    margin: 119px auto 130px auto;
-  }
-  .forClientsContainer {
-    position: relative;
-    width: 100vw;
-    height: fit-content;
-    min-height: fit-content;
-    margin: 130px auto 260px auto;
-  }
+
   
   @media screen and (max-width: 1024px) {
     .processContainer {

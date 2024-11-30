@@ -2,8 +2,9 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Marquee from "react-fast-marquee";
+
 import styles from "./iconMarquee.module.css";
+
 
 type Props = {
   img1?: string | any;
@@ -20,41 +21,56 @@ function IconMarquee(props: Props) {
 
   return (
     <>
-      <div className={styles.cardMarquee}>
-        {img1 && img2 && img3 && img4 && img5 && img6 && img7 && (
-          <Marquee speed={50}
-          autoFill={true}
-          >
-            
-              <div className={styles.element}>
-                <Image src={img1} alt="1" />
-              </div>
-              <div className={styles.element}>
-                <Image src={img2} alt="1" />
-              </div>
-              <div className={styles.element}>
-                <Image src={img3} alt="1" />
-              </div>
-              <div className={styles.element}>
-                <Image src={img4} alt="1" />
-              </div>
-              <div className={styles.element}>
-                <Image src={img5} alt="1" />
-              </div>
-              <div className={styles.element}>
-                <Image src={img6} alt="1" />
-              </div>
-              <div className={styles.element}>
-                <Image src={img7} alt="1" />
-              </div>
-              {img8 && (
-                <div className={styles.element}>
-                  <Image src={img8} alt="1" />
-                </div>
-              )}
-            
-          </Marquee>
-        )}
+      <div className={styles.iconMarquee}>
+        <div
+          className={`${styles.iconMarqueeItem} ${styles.iconMarqueeItem1}`}
+          style={{ margin: "auto 40px" }}
+        >
+          <Image src={img1} alt="1" />
+        </div>
+        <div
+          className={`${styles.iconMarqueeItem} ${styles.iconMarqueeItem2}`}
+          style={{ margin: "auto 40px" }}
+        >
+          <Image src={img2} alt="1" />
+        </div>
+        <div
+          className={`${styles.iconMarqueeItem} ${styles.iconMarqueeItem3}`}
+          style={{ margin: "auto 40px" }}
+        >
+          <Image src={img3} alt="1" />
+        </div>
+        <div
+          className={`${styles.iconMarqueeItem} ${styles.iconMarqueeItem4}`}
+          style={{ margin: "auto 40px" }}
+        >
+          <Image src={img4} alt="1" />
+        </div>
+        <div
+          className={`${styles.iconMarqueeItem} ${styles.iconMarqueeItem5}`}
+          style={{ margin: "auto 40px" }}
+        >
+          <Image src={img5} alt="1" />
+        </div>
+        <div
+          className={`${styles.iconMarqueeItem} ${styles.iconMarqueeItem6}`}
+          style={{ margin: "auto 40px" }}
+        >
+          <Image src={img6} alt="1" />
+        </div>
+        <div
+          className={`${styles.iconMarqueeItem} ${styles.iconMarqueeItem7}`}
+          style={{ margin: "auto 40px" }}
+        >
+          <Image src={img7} alt="1" />
+        </div>
+
+        <div
+          className={`${styles.iconMarqueeItem} ${styles.iconMarqueeItem8}`}
+          style={{ margin: "auto 40px" }}
+        >
+          <Image src={img8 ? img8 : img4} alt="1" />
+        </div>
       </div>
     </>
   );

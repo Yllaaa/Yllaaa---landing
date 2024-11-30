@@ -21,6 +21,9 @@
 .logo {
   margin: 24px auto 32px auto;
 }
+.btn{
+  z-index: 10;
+}
 
 @media screen and (max-width: 768px) {
   .missionContainer {

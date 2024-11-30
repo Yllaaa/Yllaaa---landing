@@ -82,7 +82,7 @@ function Footer() {
                     <li>For business</li>
                   </Link>
                   <Link
-                    href="/for_freelancers"
+                    href={`/${locale}/for_freelancers`}
                     className={`${styles.darkLink} ${styles.link}`}
                   >
                     <li>For freelancers</li>
@@ -160,25 +160,25 @@ function Footer() {
                     <li>Home</li>
                   </Link>
                   <Link
-                    href="/about"
+                    href={`/${locale}/about`}
                     className={`${styles.lightLink} ${styles.link}`}
                   >
                     <li>About us</li>
                   </Link>
                   <Link
-                    href="/for_business"
+                    href={`/${locale}/for_business`}
                     className={`${styles.lightLink} ${styles.link}`}
                   >
                     <li>For business</li>
                   </Link>
                   <Link
-                    href="/for_freelancers"
+                    href={`/${locale}/for_freelancers`}
                     className={`${styles.darkLink} ${styles.link}`}
                   >
                     <li>For freelancers</li>
                   </Link>
                   <Link
-                    href="/contact_us"
+                    href={`/${locale}/contact`}
                     className={`${styles.darkLink} ${styles.link}`}
                   >
                     <li>Contact us</li>

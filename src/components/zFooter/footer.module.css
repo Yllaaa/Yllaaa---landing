@@ -17,7 +17,6 @@
   top: 0px;
   right: 0px;
   gap: 0px;
-  opacity: 0px;
   box-shadow: 0 0 100px 68px #8b45f47a, 0 0 2000px 250px #a06bf07a;
   backdrop-filter: blur(400px);
   z-index: 2;
@@ -36,7 +35,6 @@
   bottom: 0px;
   left: 30%;
   gap: 0px;
-  opacity: 0px;
   background: transparent;
   box-shadow: 0 0 100px 68px #8b45f47a, 0 0 2000px 250px #a06bf07a;
   backdrop-filter: blur(400px);

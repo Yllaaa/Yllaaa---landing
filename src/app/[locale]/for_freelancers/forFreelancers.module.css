@@ -16,6 +16,7 @@
   height: fit-content;
   min-height: fit-content;
   margin: 148px auto 130px auto;
+  
 }
 .missionContainer .missionIcons {
   position: absolute;
@@ -78,6 +79,7 @@
   width: 100vw;
   min-height: fit-content;
   padding-bottom: 102px;
+  padding-top: 50px;
   margin: 130px auto;
 }
 .forClientsContainer {

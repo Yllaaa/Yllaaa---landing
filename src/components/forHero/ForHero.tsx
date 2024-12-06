@@ -6,6 +6,8 @@ import Image from "next/image";
 import pyramids from "../../../public/marquee/imageCardBgs/pyramids.png";
 import ButtonFlip from "../aaabutton/ButtonFlip";
 import IconMarquee from "../marquee/icons/IconMarquee";
+import { useLocale } from "next-intl";
+
 
 type Props = {
   img1?: string | any;
@@ -38,7 +40,7 @@ function ForHero(props: Props) {
     paragraph,
     button,
   } = props;
-
+  const locale = useLocale();
   return (
     <>
       <div className={styles.forHeroContainer}>
@@ -48,7 +50,8 @@ function ForHero(props: Props) {
         <div className={styles.forTexts}>
           <h4>{header}</h4>
           <h2>
-            {subHeader}{""}
+            {subHeader}
+            {""}
             <span>{specialSubHeader}</span>.
           </h2>
           <p>{paragraph}</p>
@@ -66,7 +69,7 @@ function ForHero(props: Props) {
           />
         </div>
         <div className={styles.forBtn}>
-          <ButtonFlip lable={`${button}`} />
+          <ButtonFlip lable={`${button}`} pathname={`/${locale}/contact`} />
         </div>
       </div>
     </>

@@ -1,9 +1,14 @@
+"use client";
 import React from "react";
 import styles from "./talent.module.css";
 import talent from "../../../public/forTalent/talent.svg";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 
 function Talent() {
+  const route = useRouter();
+  const locale = useLocale();
   return (
     <>
       <div className={styles.talentContainer}>
@@ -27,7 +32,14 @@ function Talent() {
               <span>Control when, where, and how you work</span>
               <span>Explore different ways to earn</span>
             </div>
-            <div className={styles.talentContentBottomBtn}>Get Started</div>
+            <div
+              onClick={() => {
+                route.push(`${locale}/contact`);
+              }}
+              className={styles.talentContentBottomBtn}
+            >
+              Get Started
+            </div>
           </div>
         </div>
       </div>

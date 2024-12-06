@@ -107,7 +107,9 @@ function Navbar() {
           </div>
 
           <div className={styles.navbarButtons}>
-            <p className={styles.navbarContact}>contact us</p>
+            <Link href={`/${locale}/contact`} className={styles.navbarContact}>
+              contact us
+            </Link>
             <p className={styles.navbarSignup}>Signup</p>
           </div>
           <div className={styles.navbarResponsive} onClick={toggleMenu}>
@@ -139,7 +141,116 @@ function Navbar() {
               ref={menuRef}
               style={{ zIndex: "1000" }}
             >
-              jhvjhvjvjgvjvjhvjhkjvk
+              <ul>
+                <li
+                  className={path === `/${locale}` ? `${styles.bgCurved}` : ""}
+                  style={path === `/${locale}` ? { background: "var(--Indigo-300)" } : {}}
+                >
+                  <Link
+                    href={`/${locale}`}
+                    style={
+                      path === `/${locale}`
+                      ? { color: "var(--neutral-1)" }
+                        : { color: "var(--Indigo-300)" }
+                    }
+                    onClick={toggleMenu}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li
+                  className={
+                    path === `/${locale}/about` ? `${styles.bgCurved}` : ""
+                  }
+                  style={
+                    path === `/${locale}/about` ? { background: "var(--Indigo-300)" } : {}
+                  }
+                >
+                  <Link
+                    href={`/${locale}/about`}
+                    style={
+                      path === `/${locale}/about`
+                      ? { color: "var(--neutral-1)" }
+                        : { color: "var(--Indigo-300)" }
+                    }
+                    onClick={toggleMenu}
+                  >
+                    About us
+                  </Link>
+                </li>
+                <li
+                  className={
+                    path === `/${locale}/for_business`
+                      ? `${styles.bgCurved}`
+                      : ""
+                  }
+                  style={
+                    path === `/${locale}/for_business`
+                      ? { background: "var(--Indigo-300)" }
+                      : {}
+                  }
+                >
+                  <Link
+                    href={`/${locale}/for_business`}
+                    style={
+                      path === `/${locale}/for_business`
+                      ? { color: "var(--neutral-1)" }
+                      : { color: "var(--Indigo-300)" }
+                    }
+                    onClick={toggleMenu}
+                  >
+                    For Business
+                  </Link>
+                </li>
+                <li
+                  className={
+                    path === `/${locale}/for_freelancers`
+                      ? `${styles.bgCurved}`
+                      : ""
+                  }
+                  style={
+                    path === `/${locale}/for_freelancers`
+                      ? { background: "var(--Indigo-300)" }
+                      : {}
+                  }
+                >
+                  <Link
+                    href={`/${locale}/for_freelancers`}
+                    style={
+                      path === `/${locale}/for_freelancers`
+                      ? { color: "var(--neutral-1)" }
+                      : { color: "var(--Indigo-300)" }
+                    }
+                    onClick={toggleMenu}
+                  >
+                    For Freelancers
+                  </Link>
+                </li>
+                <li
+                  className={
+                    path === `/${locale}/for_managers`
+                      ? `${styles.bgCurved}`
+                      : ""
+                  }
+                  style={
+                    path === `/${locale}/for_managers`
+                      ? { background: "var(--Indigo-300)" }
+                      : {}
+                  }
+                >
+                  <Link
+                    href={`/${locale}/for_managers`}
+                    style={
+                      path === `/${locale}/for_managers`
+                      ? { color: "var(--neutral-1)" }
+                      : { color: "var(--Indigo-300)" }
+                    }
+                    onClick={toggleMenu}
+                  >
+                    For Managers
+                  </Link>
+                </li>
+              </ul>
             </div>
           )}
         </div>

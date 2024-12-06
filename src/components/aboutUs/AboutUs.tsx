@@ -6,6 +6,7 @@ import laptopM from "../../../public/aboutUs/laptopM.svg";
 import Image from "next/image";
 import ButtonFlip from "../aaabutton/ButtonFlip";
 import { ScreenBreakpoints } from "@/Utils/screenBreakPoints/ScreenBreakPoints";
+import { useLocale } from "next-intl";
 
 function AboutUs() {
   // neon glow function
@@ -41,6 +42,7 @@ function AboutUs() {
   // end neon glow function
 
   const { isMobile } = ScreenBreakpoints();
+  const locale = useLocale();
 
   return (
     <>
@@ -73,7 +75,7 @@ function AboutUs() {
             </p>
           </div>
           <div className={styles.aboutBtn}>
-            <ButtonFlip lable="More About Us" />
+            <ButtonFlip lable="More About Us" pathname={`${locale}/contact`} />
           </div>
           <div className={styles.aboutImg}>
             <Image

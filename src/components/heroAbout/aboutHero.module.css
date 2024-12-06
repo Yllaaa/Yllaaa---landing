@@ -104,7 +104,8 @@
 }
 @media screen and (max-width: 768px) {
   .heroContainer {
-    min-height: 461px;
+    min-height: 521px;
+    padding-top: 80px;
   }
   .heroContainer .heroImg1 {
     width: 61.62%;
@@ -122,6 +123,7 @@
     font-size: 20px;
     line-height: 25.52px;
     margin-bottom: 31px;
+    margin-top: 80px;
   }
   .heroContent h2 {
     font-size: 40px;

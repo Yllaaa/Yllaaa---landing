@@ -6,6 +6,7 @@ function ContactPage() {
   return (
     <>
       <section className={styles.section} style={{}}>
+        <div className={styles.bgShade}></div>
         <div className={styles.contactUs}>
           <div className={styles.form}>
             <ContactUs />

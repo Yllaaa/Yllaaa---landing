@@ -1,10 +1,15 @@
+"use client";
 import React from "react";
 import styles from "./forClients.module.css";
 import Image from "next/image";
 import arrowWhite from "../../../public/icons/arrowFreeWhite.svg";
 import arrowPurple from "../../../public/icons/arrowFreePurple.svg";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 
 function ForClients() {
+  const route = useRouter();
+  const locale = useLocale();
   return (
     <>
       <div className={styles.forClients}>
@@ -26,7 +31,7 @@ function ForClients() {
             className={`${styles.forClientsBtn} ${styles.forClientsBtnDark}`}
           >
             <h5>Connect with experts</h5>
-            <p>
+            <p onClick={() => route.push(`${locale}/contact`)}>
               Start Hiring{" "}
               <span>
                 <Image src={arrowWhite} alt="arrowRight" />{" "}
@@ -37,7 +42,7 @@ function ForClients() {
             className={`${styles.forClientsBtn} ${styles.forClientsBtnDark}`}
           >
             <h5>Hire Top Talent</h5>
-            <p>
+            <p onClick={() => route.push(`${locale}/contact`)}>
               Start Hiring{" "}
               <span>
                 <Image src={arrowWhite} alt="arrowRight" />{" "}
@@ -48,7 +53,7 @@ function ForClients() {
             className={`${styles.forClientsBtn} ${styles.forClientsBtnLight}`}
           >
             <h5>Get Project Support</h5>
-            <p>
+            <p onClick={() => route.push(`${locale}/contact`)}>
               Start Hiring{" "}
               <span>
                 <Image src={arrowPurple} alt="arrowRight" />{" "}

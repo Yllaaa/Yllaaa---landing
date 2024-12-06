@@ -90,13 +90,13 @@
   justify-content: flex-start;
   gap: 8px;
   height: 20px;
-  font-family: Montserrat;
+  font-family: var(--monta);
   font-size: 16px;
   font-weight: 500;
   line-height: 19.5px;
   text-align: left;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  cursor: pointer;
   transition: gap 0.4s ease-in-out;
   -webkit-transition: gap 0.4s ease-in-out;
   -moz-transition: gap 0.4s ease-in-out;
